@@ -82,6 +82,7 @@ a:hover {
   padding: 0px 40px;
   box-sizing: border-box;
 }
+/* 미디어 쿼리 분기점 #main .input input */
 #main > .input > i {
   position: absolute;
   top: 50%;
@@ -174,3 +175,33 @@ a:hover {
   padding: 0 20px;
 }
 /* footer */
+
+@media (max-width: 780px) {
+  #main .input input {
+    width: 500px;
+  }
+  #footer > .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  #footer > .article > .article1 {
+    display: none;
+  }
+  #footer > .article > .article2 {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 520px) {
+  #main .input input {
+    width: 400px;
+  }
+}
+
+/* 미디어 쿼리 (4일차로 변경한 내용)*/
